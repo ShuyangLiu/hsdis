@@ -453,6 +453,9 @@ static const char* native_arch_name() {
 #ifdef LIBARCH_amd64
   res = "i386:x86-64";
 #endif
+#ifdef LIBARCH_arm
+  res = "arm";
+#endif
 #ifdef LIBARCH_sparc
   res = "sparc:v8plusb";
 #endif
