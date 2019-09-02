@@ -4,15 +4,19 @@ Hotspot disassembler extracted from openjdk.
 # Precondition on linux
 To build hsdis on linux you need to make sure you have the standard build tools
 ```
-apt-get install build-essential
+apt install build-essential
 ```
+
+# Tool Versions
+GCC version 7+ should be able to compile binutils version 2.29+ with no errors
+
 
 # Usage
 ```
-git clone https://github.com/liuzhengyang/hsdis
+git clone https://github.com/ShuyangLiu/hsdis
 cd hsdis
-tar -zxvf binutils-2.26.tar.gz
-make BINUTILS=binutils-2.26 ARCH=amd64
+tar -zxvf binutils-2.32.tar.gz
+make BINUTILS=binutils-2.32 ARCH=arm
 ```
 And then copy hsdis build file to the target folder in JDK.
 
