@@ -46,6 +46,7 @@ endif
 endif
 CFLAGS/sparcv9	+= -xarch=v9
 CFLAGS/amd64	+= -m64
+CFLAGS/ppc64    += -m64
 CFLAGS		+= $(CFLAGS/$(ARCH))
 DLDFLAGS	+= -G
 LDFLAGS         += -ldl
@@ -103,6 +104,7 @@ ARCH=$(ARCH1:i686=i386)
 ifdef LP64
 CFLAGS/sparcv9  += -m64
 CFLAGS/amd64    += -m64
+CFLAGS/ppc64    += -m64
 else
 ARCH=$(ARCH1:amd64=i386)
 CFLAGS/i386     += -m32
