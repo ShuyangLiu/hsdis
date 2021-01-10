@@ -16,8 +16,18 @@ GCC version 7+ should be able to compile binutils version 2.29+ with no errors
 git clone https://github.com/ShuyangLiu/hsdis
 cd hsdis
 tar -zxvf binutils-2.32.tar.gz
+```
+
+On ARM:
+```
 make BINUTILS=binutils-2.32 ARCH=arm
 ```
+
+On Power64
+```
+make BINUTILS=binutils-2.32 ARCH=ppc64
+```
+
 And then copy hsdis build file to the target folder in JDK.
 
 ### OSX
