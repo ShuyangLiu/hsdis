@@ -63,7 +63,7 @@ We can run it using the following command:
 javac Test.java
 java -XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly \
  -XX:+TraceClassLoading -XX:+LogCompilation \
- -Xcomp -XX:CompileCommand=compileonly,*Test.hello
+ -Xcomp -XX:CompileCommand=compileonly,*Test.hello \
  Test
 ```
 
